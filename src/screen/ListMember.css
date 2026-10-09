@@ -1,0 +1,174 @@
+.pageContainer {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 20px;
+  }
+  
+  /* หัวข้อ + ช่องค้นหา */
+  .headerCard {
+    background-color: #ecfdf5;
+    border-radius: 16px;
+    padding: 20px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 24px;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+  
+  .headerTitle {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  
+  .headerIcon {
+    color: #16a34a;
+  }
+  
+  .headerTitle h2 {
+    margin: 0;
+    font-size: 24px;
+    color: #15803d;
+  }
+  
+  .searchBox {
+    position: relative;
+    min-width: 280px;
+  }
+  
+  .searchIcon {
+    position: absolute;
+    left: 14px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #94a3b8;
+  }
+  
+  .searchBox input {
+    width: 100%;
+    padding: 10px 14px 10px 40px;
+    border: 1px solid #d1d5db;
+    border-radius: 10px;
+    font-size: 14px;
+    box-sizing: border-box;
+  }
+  
+  /* ตาราง */
+  .memberTable {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+  }
+  
+  .memberTable th {
+    background-color: #f1f5f9;
+    padding: 14px 16px;
+    text-align: left;
+    font-weight: 600;
+    color: #334155;
+  }
+  
+  .memberTable td {
+    padding: 14px 16px;
+    border-bottom: 1px solid #f1f5f9;
+  }
+  
+  .actionHeader {
+    text-align: center;
+  }
+  
+  /* ป้ายสถานะ */
+  .statusBadge {
+    display: inline-block;
+    padding: 4px 14px;
+    border-radius: 999px;
+    font-size: 13px;
+    font-weight: 500;
+  }
+  
+  .statusActive {
+    background-color: #dcfce7;
+    color: #15803d;
+  }
+  
+  .statusInactive {
+    background-color: #fee2e2;
+    color: #b91c1c;
+  }
+  
+  /* ปุ่มจัดการ */
+  .actionCell {
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+  }
+  
+  .editButton,
+  .deleteButton {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    border: none;
+    border-radius: 8px;
+    padding: 8px 14px;
+    font-size: 13px;
+    font-weight: 500;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  
+  .editButton {
+    background-color: #2563eb;
+    color: white;
+  }
+  
+  .editButton:hover {
+    background-color: #1d4ed8;
+  }
+  
+  .deleteButton {
+    background-color: #ef4444;
+    color: white;
+  }
+  
+  .deleteButton:hover {
+    background-color: #dc2626;
+  }
+  
+  .loadingText,
+  .emptyText {
+    text-align: center;
+    color: #94a3b8;
+    padding: 40px;
+  }
+
+/* ปุ่มเพิ่มสมาชิกใหม่ */
+.footerActions {
+  margin-top: 24px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.addMemberButton {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background-color: #2563eb;
+  color: #ffffff;
+  padding: 12px 20px;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 4px 6px -1px rgba(37, 99, 235, 0.2);
+  transition: all 0.2s;
+}
+
+.addMemberButton:hover {
+  background-color: #1d4ed8;
+  transform: translateY(-1px);
+}
